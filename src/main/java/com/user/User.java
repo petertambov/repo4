@@ -1,4 +1,4 @@
-package com;
+package com.user;
 
 public class User {
     private Long id;

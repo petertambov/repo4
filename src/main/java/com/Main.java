@@ -4,13 +4,16 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import java.util.List;
 
-public class Main {
+import com.user.User;
+import com.userservice.UserService;
+import com.userdao.UserDao;
 
+
+public class Main {
     public static void main(String[] args) {
 
         AnnotationConfigApplicationContext context =
                 new AnnotationConfigApplicationContext(Config.class);
-
 
         UserDao userDao = context.getBean(UserDao.class);
         userDao.initTable();

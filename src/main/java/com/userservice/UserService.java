@@ -1,8 +1,11 @@
-package com;
+package com.userservice;
 
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
+import com.user.User;
+import com.userdao.UserDao;
 
 @Service
 public class UserService {
